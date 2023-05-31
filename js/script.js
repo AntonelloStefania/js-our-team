@@ -47,7 +47,7 @@ for(let i=0; i<team.length;i++){
     let member=team[i];
     console.log(member)
 
-   let card=  `<div class="card" style="width: 18rem;">
+   let card=  `<div class="card width filter" >
                     <img class="card-img-top" src="./img/${member.image}" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">${member.name}</h5>
@@ -57,4 +57,29 @@ for(let i=0; i<team.length;i++){
                 </div>`
 
     main_container.innerHTML+=card;
+    
+    //prova pulsante carosello cards
+    let active_card=0;
+    
+    let all_cards= document.getElementsByClassName('card')
+    all_cards[active_card].classList.add('z-index-max')
+    all_cards[active_card].classList.remove('filter')
+    const btn_next= document.getElementById('btn-next').
+    addEventListener('click', function(){
+        
+        all_cards[active_card].classList.add('filter')
+        all_cards[active_card].classList.remove('z-index-max')
+        active_card++
+        
+            for(let i=0; i<team.length; i++){
+                if(active_card >= all_cards.length){
+                    active_card=0
+                } 
+            }
+            
+
+            // Aggiungi le classi alla prossima card
+            all_cards[active_card].classList.add('z-index-max');
+            all_cards[active_card].classList.remove('filter')
+    })
 }
