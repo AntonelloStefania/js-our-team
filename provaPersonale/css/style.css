@@ -12,13 +12,14 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.z-index-max{
-    z-index:3;
-    scale: 1.2;
+.card.z-index-max{
+    z-index:6;
+    /* scale: 1.2; */
     box-shadow: 0px 0px 15px 8px black;
 }
 #main{
-    width: 65%;
+    /* width: 65%; */
+    height: 500px;
     background-color: #10646680;
     margin: 50px auto;
     border-radius: 1rem;
@@ -26,9 +27,12 @@ body{
     box-shadow: 0px 0px 56px 30px #202c2c;
 }
 .width{
-    width: calc(100% / 3 - 20px);
+    width: 250px;
+    height: 335px;
     margin: 3rem 10px;
-   
+    position: absolute;
+    box-shadow: 0px 0px 15px 4px black;
+    translate:(-50%)
 }
 
 .filter{
@@ -37,7 +41,7 @@ body{
 
 .button-container{
     position: absolute;
-    top: 50%;
+    top: 105%;
     transform:translate(-50%,-50%);
     z-index: 50;  
 }
@@ -51,4 +55,61 @@ body{
 
 .title p{
     font-size: 18px;
+}
+
+.card.center-center{
+    left:50%
+}
+
+.center{
+   left:50%
+}
+
+.low-left{
+    left:60%
+}
+
+.mid-left{
+    left: 70%;
+}
+
+.max-left{
+    left: 78%;
+}
+
+.low-right{
+    left: 25%;
+}
+
+.max-right{
+    left: 35%;
+}
+
+.z-ind-3{
+    z-index: 3;
+}
+
+.z-ind-2{
+    z-index: 2;
+}
+
+.z-ind-1{
+    z-index: 1;
+}
+
+.card.scale-12{
+    transform: scale(1.2);
+    box-shadow: 4px 5px 38px 20px black;
+}
+
+.scale-1{
+    transform: scale(1);
+}
+
+.scale-08{
+    transform: scale(0.8);
+}
+
+.scale-07{
+    transform: scale(0.7);
 }
