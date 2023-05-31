@@ -46,4 +46,15 @@ const main_container = document.getElementById('main');
 for(let i=0; i<team.length;i++){
     let member=team[i];
     console.log(member)
+
+   let card=  `<div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./img/${member.image}" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">${member.name}</h5>
+                      <p class="card-text">${member.role}</p>
+                    </div>
+                  </div>
+                </div>`
+
+    main_container.innerHTML+=card;
 }
