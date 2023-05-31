@@ -18,13 +18,14 @@ body{
     box-shadow: 0px 0px 15px 8px black;
 }
 #main{
-    /* width: 65%; */
+    width: 700px;
     height: 500px;
     background-color: #10646680;
     margin: 50px auto;
     border-radius: 1rem;
     border: 3px solid #ffffffb5;
     box-shadow: 0px 0px 56px 30px #202c2c;
+    position: relative;
 }
 .width{
     width: 250px;
@@ -32,7 +33,7 @@ body{
     margin: 3rem 10px;
     position: absolute;
     box-shadow: 0px 0px 15px 4px black;
-    translate:(-50%)
+    translate:-50%
 }
 
 .filter{
