@@ -38,3 +38,12 @@ const team=[
 ]
 
 console.log(team)
+
+//recupero elemento DOM
+const main_container = document.getElementById('main');
+
+//ciclo array-team
+for(let i=0; i<team.length;i++){
+    let member=team[i];
+    console.log(member)
+}
