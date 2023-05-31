@@ -77,8 +77,6 @@ for(let i=0; i<team.length;i++){
                 } 
             }
             
-
-            // Aggiungi le classi alla prossima card
             all_cards[active_card].classList.add('z-index-max');
             all_cards[active_card].classList.remove('filter')
     })
