@@ -5,11 +5,12 @@
 }
 
 body{
-    background-color: #062829;
+    background: rgb(17 14 75);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,103,9,1) 35%, rgba(0,212,255,1) 100%);
     color: white;
     padding: 50px;
-    box-shadow: 0px 0px 113px 32px inset #7fd6d894;
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }
 
 .card.z-index-max{
@@ -20,12 +21,8 @@ body{
 #main{
     width: 700px;
     height: 500px;
-    background-color: #10646680;
     margin: 50px auto;
     border-radius: 1rem;
-    border: 3px solid #ffffffb5;
-    box-shadow: 0px 0px 56px 30px #202c2c;
-    position: relative;
 }
 .width{
     width: 250px;
@@ -37,7 +34,8 @@ body{
 }
 
 .filter{
-    filter: grayscale(100);
+    filter: grayscale(100) blur(3px);
+    perspective: 250px;
 }
 
 .button-container{
